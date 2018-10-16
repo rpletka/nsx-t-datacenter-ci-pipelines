@@ -112,7 +112,10 @@ nsx_t_t1router_logical_switches_spec: |
     - name: PKS-Services
       logical_switch_gw: 192.168.60.1 # Last octet should be 1 rather than 0
       subnet_mask: 24
-
+      
+nsx_t_ha_switching_profile_spec: |
+  ha_switching_profiles:
+  - name: HASwitchingProfile
 
 nsx_t_container_ip_block_spec: |
   container_ip_blocks:
